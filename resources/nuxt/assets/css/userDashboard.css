@@ -1,0 +1,188 @@
+html, body{
+    margin: 0;
+    height: 100%;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+.dashboard-container{
+    display: grid;
+    grid-template-columns: 190px 1fr;
+    height: 100vh;
+}
+.dashboard-container-mobile{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    height: 100vh;
+}
+.dark-primary{
+    background: #3F51B5;
+}
+
+aside{
+    background: #3F51B5;
+    display: grid;
+    grid-template: 40px 50px 1fr / 1fr;
+    color: #d5d4f9;
+    box-shadow: 3px 0px 2px rgba(0,0,0,0.5);
+}
+.dashboard-content{
+    display: grid;
+    grid-template: 40px 1fr / repeat(12, 1fr);
+}
+nav{
+    background: #fefefe;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+.app-brand{
+    background: #303F9F;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+}
+
+.app-brand p, .side-profile{
+    padding: 5px 10px;
+}
+.side-profile{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    align-items: center;
+}
+.left-dashboard-nav-item{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto;
+    justify-content: start;
+    align-content: center;
+    padding-left: 20px;
+}
+.left-dashboard-nav-item p{
+    margin: 0;
+}
+.right-dashboard-nav-item{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    justify-content: end;
+    padding-right: 20px;
+}
+.side-profile img, .right-dashboard-nav-item img{
+    max-width: 25px;
+}
+.right-dashboard-nav-item img{
+    max-width: 25px;
+    display: inline;
+}
+
+
+section{
+    background: #f7f7f9;
+    grid-column: 1 / -1;
+    padding: 20px;
+    grid-gap: 20px;
+}
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu, .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mainmenu li, .submenu li{
+    border-top: 1px solid #303F9F;
+}
+.mainmenu li:last-child{
+    border-bottom: 1px solid #303F9F;
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #d5d4f9;
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+    background: #303F9F;
+}
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.mainmenu li:hover .submenu {
+    display: block;
+    max-height: 200px;
+    transition: .9s;
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+    /*background-color: #999;*/
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+    /*background-color: #666;*/
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out 0s, visibility 0s linear .9s, z-index 0s linear 0.01s;
+}
+
+.dashboard-page-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.dashboard-form{
+    display: grid;
+    grid-gap: 10px;
+}
+select, input{
+    padding: 10px;
+}
+.dashboard-element{
+    padding: 20px;
+    background: white;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.round-button{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 11px;
+    color: #fefefe;
+    display: grid;
+    text-align: center;
+    align-content: center;
+    padding: 5px;
+    justify-self: end;
+}
+

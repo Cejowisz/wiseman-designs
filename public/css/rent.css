@@ -1,0 +1,38 @@
+.html,body{
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+.material-icons{
+    vertical-align: middle !important;
+    font-weight: bold !important;
+}
+nav{
+    z-index: 9000;
+    /*background: transparent;*/
+    box-shadow: none;
+}
+.btn{
+    text-transform: none;
+}
+#search{
+    margin-top: 40px;
+}
+.container{
+    width: 100%;
+}
+
+.pri-color{
+    color: #008bcd;
+}
+.pri-back{
+    background: #008bcd;
+}
+
+.icon-hide{
+    float: right !important;
+}
+@media (min-width: 607px){
+    .icon-hide{
+        display: none !important;
+    }
+}
