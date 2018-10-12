@@ -12,7 +12,7 @@ import { setContext, getLocation, getRouteData } from './utils'
 import { createStore } from './store.js'
 
 /* Plugins */
-import nuxt_plugin_axios_e930bc20 from 'nuxt_plugin_axios_e930bc20' // Source: ./axios.js
+import nuxt_plugin_axios_651e2c40 from 'nuxt_plugin_axios_651e2c40' // Source: ./axios.js
 
 
 // Component: <no-ssr>
@@ -151,7 +151,7 @@ async function createApp (ssrContext) {
 
   // Plugin execution
   
-  if (typeof nuxt_plugin_axios_e930bc20 === 'function') await nuxt_plugin_axios_e930bc20(app.context, inject)
+  if (typeof nuxt_plugin_axios_651e2c40 === 'function') await nuxt_plugin_axios_651e2c40(app.context, inject)
   
 
   // If server-side, wait for async component to be resolved first

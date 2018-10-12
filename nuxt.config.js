@@ -6,7 +6,8 @@ module.exports = laravelNuxt({
 
     },
     css: [
-        '~/assets/css/bootstrap.css'
+        '~/assets/css/bootstrap.css',
+        '~/assets/font-awesome/css/font-awesome.min.css'
     ],
     build: {
         extractCSS: true,
@@ -20,7 +21,7 @@ module.exports = laravelNuxt({
     ],
 
     router: {
-        middleware: 'main'
+        // middleware: 'main'
     },
 
     plugins: [

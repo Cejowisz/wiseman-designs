@@ -155,7 +155,7 @@
         color: #fff;
     }
     .email-icon[type='email'] {
-        background-image: url(../assets/img/f.jpg);
+        /*background-image: url(../assets/img/f.jpg);*/
         background-position: 400px 7px;
         background-repeat: no-repeat;
     }

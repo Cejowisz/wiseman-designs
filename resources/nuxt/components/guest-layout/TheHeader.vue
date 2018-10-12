@@ -3,15 +3,18 @@
   <header class="the-header">
     <TheSideNavToggle @toggle="$emit('sidenavToggle')" />
     <div class="logo">
-      <nuxt-link to="/">WD BLOG</nuxt-link>
+      <nuxt-link to="/">WISEMAN DESIGN</nuxt-link>
     </div>
     <div class="spacer"></div>
     <div class="navigation-items">
       <ul class="nav-list">
-        <li class="nav-item"><nuxt-link to="/posts">Blog</nuxt-link></li>
+        <li class="nav-item"><nuxt-link to="/">Home</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
-        <li class="nav-item"><nuxt-link :to="loginLink">{{ loginText }}</nuxt-link></li>
-        <li class="nav-item" v-show="register"><nuxt-link to="/register">Register</nuxt-link></li>
+        <li class="nav-item"><nuxt-link to="/services">Services</nuxt-link></li>
+        <li class="nav-item"><nuxt-link to="/our-works">Our Works</nuxt-link></li>
+        <li class="nav-item"><nuxt-link to="/contact">Contact</nuxt-link></li>
+        <!--<li class="nav-item"><nuxt-link :to="loginLink">{{ loginText }}</nuxt-link></li>-->
+        <!--<li class="nav-item" v-show="register"><nuxt-link to="/register">Register</nuxt-link></li>-->
       </ul>
     </div>
   </header>
@@ -30,8 +33,8 @@ export default {
 
     data() {
         return {
-            loginText: 'Login',
-            loginLink: '/login',
+//            loginText: 'Login',
+//            loginLink: '/login',
             register: true
         }
     },
@@ -49,7 +52,7 @@ export default {
     },
 
     mounted() {
-        this.isLoggedIn()
+//        this.isLoggedIn()
     }
 }
 </script>
@@ -114,8 +117,7 @@ export default {
 }
 
 .nav-item a:hover,
-.nav-item a:active,
-.nav-item a.nuxt-link-active {
+.nav-item a:active{
   color: red;
 }
 </style>

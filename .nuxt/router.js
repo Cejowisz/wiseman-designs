@@ -3,11 +3,15 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-const _134421ff = () => import('..\\resources\\nuxt\\pages\\register.vue' /* webpackChunkName: "pages_register" */).then(m => m.default || m)
-const _eae17c86 = () => import('..\\resources\\nuxt\\pages\\login.vue' /* webpackChunkName: "pages_login" */).then(m => m.default || m)
-const _6e5183cc = () => import('..\\resources\\nuxt\\pages\\dashboard\\index.vue' /* webpackChunkName: "pages_dashboard_index" */).then(m => m.default || m)
-const _1469fe66 = () => import('..\\resources\\nuxt\\pages\\logout.vue' /* webpackChunkName: "pages_logout" */).then(m => m.default || m)
-const _7e30c2b4 = () => import('..\\resources\\nuxt\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
+const _7b6ee76c = () => import('..\\resources\\nuxt\\pages\\services.vue' /* webpackChunkName: "pages_services" */).then(m => m.default || m)
+const _3ee80205 = () => import('..\\resources\\nuxt\\pages\\our-works.vue' /* webpackChunkName: "pages_our-works" */).then(m => m.default || m)
+const _4f3cc4a6 = () => import('..\\resources\\nuxt\\pages\\login.vue' /* webpackChunkName: "pages_login" */).then(m => m.default || m)
+const _60190c2a = () => import('..\\resources\\nuxt\\pages\\dashboard\\index.vue' /* webpackChunkName: "pages_dashboard_index" */).then(m => m.default || m)
+const _21fbc05e = () => import('..\\resources\\nuxt\\pages\\about.vue' /* webpackChunkName: "pages_about" */).then(m => m.default || m)
+const _397643e4 = () => import('..\\resources\\nuxt\\pages\\contact.vue' /* webpackChunkName: "pages_contact" */).then(m => m.default || m)
+const _fe39bf14 = () => import('..\\resources\\nuxt\\pages\\logout.vue' /* webpackChunkName: "pages_logout" */).then(m => m.default || m)
+const _45fd000f = () => import('..\\resources\\nuxt\\pages\\register.vue' /* webpackChunkName: "pages_register" */).then(m => m.default || m)
+const _0eb9fa96 = () => import('..\\resources\\nuxt\\pages\\index.vue' /* webpackChunkName: "pages_index" */).then(m => m.default || m)
 
 
 
@@ -68,33 +72,53 @@ export function createRouter () {
     scrollBehavior,
     routes: [
 		{
-			path: "/register",
-			component: _134421ff,
-			name: "register"
+			path: "/services",
+			component: _7b6ee76c,
+			name: "services"
+		},
+		{
+			path: "/our-works",
+			component: _3ee80205,
+			name: "our-works"
 		},
 		{
 			path: "/login",
-			component: _eae17c86,
+			component: _4f3cc4a6,
 			name: "login"
 		},
 		{
 			path: "/dashboard",
-			component: _6e5183cc,
+			component: _60190c2a,
 			name: "dashboard"
 		},
 		{
+			path: "/about",
+			component: _21fbc05e,
+			name: "about"
+		},
+		{
+			path: "/contact",
+			component: _397643e4,
+			name: "contact"
+		},
+		{
 			path: "/logout",
-			component: _1469fe66,
+			component: _fe39bf14,
 			name: "logout"
 		},
 		{
+			path: "/register",
+			component: _45fd000f,
+			name: "register"
+		},
+		{
 			path: "/",
-			component: _7e30c2b4,
+			component: _0eb9fa96,
 			name: "index"
 		},
 		{
 			path: "/__laravel_nuxt__",
-			component: _7e30c2b4,
+			component: _0eb9fa96,
 			name: "__laravel_nuxt__"
 		}
     ],
